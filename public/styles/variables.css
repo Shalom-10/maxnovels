@@ -1,0 +1,38 @@
+.colors {
+    --white: #fff;
+    --white-2: #f4f8fa;
+    --white-fade: #ffffff7c;
+    --black: #111;
+    --black-1: #222;
+    --black-2: #504f4f;
+    --black-3: #1111111a;
+    --black-4: #424242;
+    --grey: rgba(211, 211, 211, 0.268);
+
+    --blue: #4aabff;
+    --primary-color: #F8333C;
+    /* --primary-color: #F8333C; */
+    --yellow: #FCAB10;
+    --purple: #54426B;
+    --secondary-color: #ED6A5A;
+    --primary-color: #15436b;
+    --primary-color-variant: #7f63fd;
+    --electric: #8AF3FF;
+}
+
+.lightmode .colors {
+    --secondary-color: #623fff;
+    --primary-color: #1661a3;
+    --primary-color-variant:  #f7523c;
+
+}
+
+/* .darkmode .colors {
+
+} */
+
+.pixels {
+    --radius: 10px;
+    --round: 5rem;
+    --content-padding: 1rem 2rem;
+}

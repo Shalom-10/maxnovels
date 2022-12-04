@@ -1,0 +1,91 @@
+
+.card {
+    background: var(--black-2);
+    border-radius: var(--radius);
+    box-shadow: 0 0 var(--radius) var(--black-3);
+    color: var(--white);
+    cursor: pointer;
+    height: 320px;
+    width: 250px;
+    font-family: 'Poppins' , sans-serif;
+    margin-top: 65px;
+    transform: scale(.9);
+
+}
+
+.lightmode .card {
+    background: var(--white-2);
+    color: var(--black-1);
+}
+
+@media only screen and (max-width: 530px) {
+    .card {
+        height: 200px;
+        width: 150px;
+
+        font-size: 70%;
+    }
+}
+
+.card .image-box {
+    /* background: red; */
+    height: 60%;
+}
+
+.card .image {
+    background: var(--white-2);
+    box-shadow: 0 0 50px var(--black-3);
+    border-radius: var(--radius);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    width: 80%;
+    height: 80%;
+    
+    left: 50%;
+    top: -20%;
+    transform: translateX(-50%);
+}
+
+.card:hover .image {
+    top: -25%;
+}
+
+.card .line {
+    background: var(--black-3);
+    border: 1px solid lightgrey;
+    border-top: none;
+    border-bottom: 0;
+    width: 5%;
+}
+
+.card .line.right {
+    border: none;
+    background: var(--white-2);
+    width: 0;
+    padding-left: 0;
+}
+
+.card .details {
+    /* background: yellow; */
+    height: 40%;
+}
+
+.card small {
+    color: var(--white-fade);
+}
+
+.lightmode .card small {
+    color: var(--black-2);
+}
+
+.card .continue_reading,
+.card.continue .start_reading {
+    display: none;
+}
+
+.card.continue .continue_reading {
+    background: var(--primary-color);
+    display: block;
+}
+

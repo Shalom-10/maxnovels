@@ -1,0 +1,47 @@
+.banner .top {
+    background: url("../images/content_writer_maxnovels.webp");
+    background-color: var(--black-1);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+.lightmode .banner .top {
+    background-color: #ffffffe1;
+    background-blend-mode: overlay;
+    /* color: var(--black); */
+}
+
+.banner .top h3 {
+    color: var(--white);
+    font-size: clamp(2.5rem, 4.5vw, 5rem);
+}
+
+.lightmode .banner .top h3,
+.lightmode .banner .top p {
+    color: var(--black-1)
+}
+
+.banner .top h3 span {
+    color: var(--secondary-color);
+}
+
+.banner .top p {
+    color: var(--white-2);
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    padding: 1rem;
+}
+
+.banner .btn {
+    padding: .75rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+}
+
+@media only screen and (max-width: 630px) {
+    .banner .top p {
+        width: 80%;
+        font-size: 90%;
+    }
+}

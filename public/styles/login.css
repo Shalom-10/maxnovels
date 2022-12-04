@@ -1,0 +1,147 @@
+
+.wrapper {
+    height: 100vh;
+    color: var(--white);
+    overflow: hidden;
+}
+
+.left {
+    width: 40%;
+    overflow-y: scroll;
+}
+
+.right {
+    /* background: red; */
+    width: 60%;
+}
+
+.right .overlay {
+    background: var(--black);
+    opacity: 0.32;
+}
+
+.left h1 span {
+    color: var(--secondary-color);
+}
+
+/* .left h1 span:first-of-type {
+    color: var(--black-1);
+} */
+
+.left p {
+    font-family: 'Poppins', sans-serif;
+    color: lightgrey;
+    padding: .5rem 0;
+}
+
+.error_message {
+    background: #111111ae;
+    font-size: 80%;
+    padding: 0 1rem;
+    margin: .2rem;
+    border-radius: 10px;
+}
+
+.error_message p {
+    color: rgb(255, 61, 61);
+}
+
+form {
+    padding: 1rem 0;
+}
+
+ .input {
+    padding: .25rem 0;
+}
+
+ label {
+    color: lightgrey;
+    font-family: 'Poppins', sans-serif;
+    padding: .5rem 0;
+}
+
+input,
+select,
+textarea {
+    background: var(--black-2);
+    border: 3px solid var(--grey);
+    border-radius: 1rem;
+    color: var(--white);
+
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding: .75rem;
+
+    outline: none;
+}
+
+.date-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.date-box select {
+    width: 100%;
+    transform: scale(.95)
+}
+
+button {
+    background: var(--black-2);
+    box-shadow: 0 0 5px var(--black-3);
+    border: none;
+    border-radius: 1rem;
+    color: var(--white);
+    cursor: pointer;
+    padding: 1rem;
+    margin: 2rem 0;
+    margin-bottom: .5rem;
+    font-size: 100%;
+}
+
+button.facebook,
+button.google {
+    margin: .5rem 0;
+}
+
+button + span {
+    padding: .5rem 0;
+    padding-bottom: 1.5rem;
+}
+
+button + span a {
+    color: var(--blue);
+}
+
+button.facebook {
+    background: #3b5998;
+}
+
+button.google {
+    background: #db3236;
+}
+
+button span {
+    padding: 0 .5rem;
+}
+
+@media only screen and (max-width: 990px) {
+    .left {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .left {
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .left {
+        width: 100vw;
+    }
+
+    .right {
+        display: none;
+    }
+}

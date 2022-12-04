@@ -1,0 +1,164 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 230px calc(100vw - 230px);
+    height: 100vh;
+    overflow-y: hidden;
+    color: var(--white);
+}
+
+.wrapper .left_c {
+    border-right: 3px solid var(--black-1);
+}
+
+.wrapper .right_c .top {
+    height: 50px;
+    border-bottom: 3px solid var(--black-1);
+
+}
+
+.left_c .top {
+    background: var(--black-3);
+    border-bottom: 3px solid var(--black-1);
+
+}
+
+.left_c .avatar-name {
+    padding-bottom: 1rem;
+}
+
+.left_c .avatar {
+    --size: 60px;
+    height: var(--size);
+    width: var(--size);
+
+    margin: 1rem;
+}
+
+.left_c .menu-content {
+    padding: 1rem .5rem;
+}
+
+.left_c .menu-item {
+    background: var(--black-2);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .35rem 1rem;
+    margin: 1rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-item .icon {
+    font-size: 120%;
+}
+
+.menu-item .name {
+    font-size: 90%;
+    padding: 0 .5rem;
+}
+
+.right_c {
+    overflow-y: scroll;
+}
+
+.no-users .icon{
+    font-size: 400%;
+}
+
+.no-users {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+}
+
+.pagination *{
+    background: var(--black-4) !important;
+    color: var(--white) !important;
+}
+
+.no-result {
+    height: 40vh;
+    color: var(--white);
+    display: none;
+}
+
+.lightmode .no-result {
+    color: var(--black-4);
+}
+
+.no-result.active {
+    display: flex;
+}
+
+.no-result .icon {
+    font-size: 450%;
+}
+
+.no-result p {
+    padding: .65rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.book_loading {
+    background: var(--black-4);
+    display: none;
+    transform: scale(1);
+    height: 40vh;
+
+}
+
+.lightmode .book_loading {
+    background: var(--white);
+}
+
+.book_loading.active {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.card.active {
+    display: none;
+}
+
+.book_loading .image {
+    --size: 70px;
+    height: var(--size);
+    width: var(--size);
+    
+    background: url('/images/loading.gif'), var(--black-4);
+    background-size: contain;
+    background-blend-mode: color;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lightmode .book_loading .image {
+    background-color: var(--white);
+    background-blend-mode: normal;
+}
+
+@media (min-width: 640px) {
+    .sm\:hidden {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper .left_c {
+        background: var(--black-4);
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        top: 0;
+        left: -200vw;
+
+        z-index: 5;
+    }
+
+    .wrapper .left_c.active {
+        left: 0;
+    }
+}

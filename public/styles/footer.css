@@ -1,0 +1,7 @@
+footer {
+    color: var(--white-2);
+}
+
+.lightmode footer {
+    color: var(--black-1);
+}

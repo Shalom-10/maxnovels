@@ -1,0 +1,190 @@
+
+.wrapper {
+    color: var(--white);
+}
+
+
+nav {
+    border-bottom: 3px solid var(--black-1);
+    color: var(--white);
+}
+
+
+
+nav h2 {
+    padding: 0 1rem;
+}
+
+.btn:first-of-type {
+    background: var(--blue);
+}
+
+.btn {
+    padding: .6rem 2rem;
+    margin: 0 .5rem;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn.link:nth-of-type(2) {
+    color: var(--blue)
+}
+
+.btn.link:nth-of-type(3) {
+    color: var(--secondary-color)
+}
+
+.btn.link {
+    background: transparent;
+    box-shadow: none;
+    text-decoration: dashed;
+    padding: 0 .65rem;
+    font-weight: 900;
+}
+
+.btn.link.p-fix {
+    background: linear-gradient(90deg, var(--purple), var(--blue));
+    color: var(--white);
+    bottom: 20px;
+    right: 10px;
+    padding: .65rem 1rem;
+}
+
+.btn.link:hover {
+    text-decoration: underline;
+}
+
+.ql-toolbar.ql-snow.active {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+section {
+    padding: 2rem;
+    margin: 0;
+}
+
+section * {
+    color: white;
+    border: none;
+    stroke: #fff !important;
+    /* fill: #fff !important; */
+    background: var(--black-4) !important;
+}
+
+.title {
+    border-bottom: 3px dashed var(--black-2);
+}
+
+.title input, textarea{
+    background: transparent;
+    color: var(--white);
+    outline: none;
+    border: none;
+    font-size: 200%;
+    font-family: inherit;
+}
+
+textarea {
+    /* background: var(--black-3); */
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    height: 40vh;
+}
+
+.item {
+    background: var(--black-2);
+    border-radius: 10px;
+    height: max-content;
+    resize: none;
+}
+
+.writer-box {
+    padding: 1rem;
+    min-height: 100vh;
+    border: none !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 110% !important;
+}
+
+.ql-editor.ql-blank::before {
+    color: var(--white) !important;
+}
+
+.writer-box textarea {
+    padding: .5rem 3rem;
+    margin: .5rem 0;
+}
+
+.tool-box {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: var(--black-4);
+    box-shadow: 0 0 2px var(--black);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    height: 200px;
+    width: 100px;
+}
+
+.tool {
+    --size: 70px;
+    background: var(--black-2);
+    border-radius: 5px;
+    box-shadow: 0 0 3px var(--black);
+    height: var(--size);
+    width: var(--size);
+    font-size: 250%;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 555px) {
+    .wrapper {
+        font-size: 80%;
+    }
+
+    .tool-box {
+        height: 150px;
+        width: 70px;
+    }
+
+    .tool {
+        --size: 50px;
+        font-size: 180%;
+    }
+
+    .btn {
+        padding: .6rem 1rem;
+    }
+
+    .menu-btn {
+        --size: 40px;
+        font-size: 150%;
+    }
+
+    nav h2 {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .btn {
+        font-size: 90%;
+        padding: .65rem;
+        margin: 0 .25rem;
+    }
+
+    .writer-box textarea {
+        padding: 2rem;
+    }
+}

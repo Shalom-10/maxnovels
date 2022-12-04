@@ -1,0 +1,64 @@
+
+.wrapper {
+    padding-top: 4rem;
+}
+
+section {
+    width: 600px;
+    margin: 2rem;
+    padding: 2rem;
+    min-height: 100vh;
+    background: var(--black-3);
+    border-radius: 10px;
+}
+
+.chapter {
+    background: var(--black-2);
+    border-radius: 10px;
+    color: var(--white);
+    margin: 1rem 0;
+    padding: 1rem;
+
+}
+
+.chapter .icon {
+    font-size: 200%;
+    margin-right: 1rem;
+}
+
+.chapter .state {
+    font-family: 'Poppins';
+    font-size: 80%;
+}
+
+
+.btn {
+    background: var(--black-1);
+    width: max-content;
+    font-family: 'Poppins', sans-serif;
+    padding: .65rem 1rem;
+    margin-right: .5rem;
+}
+
+.btn + .btn {
+    background: var(--primary-color);
+}
+
+.btn-case {
+    padding:0 3rem;
+    padding-top: 2rem;
+}
+
+@media only screen and (max-width: 750px)  {
+    section.chapter-list {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1rem
+    }
+
+    .btn-case {
+        padding: 0;
+        transform: scale(.9);
+        margin-top: 2rem
+    }
+}

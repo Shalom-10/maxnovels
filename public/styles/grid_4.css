@@ -1,0 +1,87 @@
+
+.grid-4, .grid-4 .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+}
+
+.grid-4 .card {
+    background: var(--black-4);
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    margin: 0;
+}
+
+.lightmode .grid-4 .card {
+    background: var(--white-2);
+}
+
+.grid-4 .card:nth-of-type(n + 3) .right {
+    grid-row: 1/2;
+}
+
+.grid-4 .card .left {
+    background: var(--primary-color);
+}
+
+.grid-4 .card .right {
+    padding: 1rem;
+}
+
+.grid-4 h3 {
+    font-family: 'Vidaloka', serif;
+    font-size: clamp(1.5rem, 2.3vw, 4rem);
+    line-height: 1.2;
+}
+
+.grid-4 h3 span {
+    color: var(--secondary-color);
+}
+
+.grid-4 p {
+    padding: .5rem 0;
+    font-size: 90%;
+}
+
+.grid-4 .btn {
+    padding: .5rem 1rem;
+    width: max-content;
+    font-size: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-4 .card:nth-of-type(2) .right,
+    .grid-4 .card:nth-of-type(3) .left {
+        grid-row: 1/2;
+    }
+
+    .grid-4 .card .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    .grid-4 .card, .grid-4 {
+        display: block;
+        height: max-content;
+    }
+
+    .grid-4 .card .left {
+        height: 300px;
+    }
+
+    .grid-4 .card .right {
+        height: max-content;
+    }
+}

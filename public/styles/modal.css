@@ -1,0 +1,125 @@
+.modal-case {
+    background: rgba(0, 0, 0, 0.218);
+    color: #fff;
+    display: none;
+}
+
+.modal-case.active {
+    display: flex;
+}
+
+.modal {
+    background: var(--black-2);
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 550px) {
+    .modal {
+        width: 100vw;
+        transform: scale(.9);
+    }
+}
+
+
+.modal-top {
+    border-bottom: 2px solid var(--black-1);
+    height: 50px;
+    padding: 1rem;
+}
+
+.modal-content {
+    height: calc(100% - 50px);
+}
+
+.modal-right {
+    width: 50%;
+    height: 100%;
+    border-right: 2px solid var(--black-1);
+    padding: 1rem;
+ 
+}
+
+.modal .btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-image {
+    background: var(--black);
+    border-radius: 10px;
+    height: 80%;
+    width: 100%;
+}
+
+.modal-left {
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.modal-right .btn {
+    background: var(--grey);
+}
+
+.modal-right .btn:hover {
+    background: var(--black-1);
+}
+
+.modal label {
+    padding: .25rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal input, .modal select {
+    background: var(--black-4);
+    border: 2px solid var(--grey) !important;
+    border-radius: 10px !important;
+    outline: none;
+    width: 100%;
+    padding: .35rem !important;
+}
+
+.modal .input {
+    top: -20px;
+    position: relative;
+}
+
+.modal-btns {
+    padding: .5rem;
+}
+
+.modal-btns > *{
+    background: var(--secondary-color);
+    border-radius: 10px;
+    width: 50%;
+    padding: .65rem;
+    transform: scale(.9);
+    cursor: pointer;
+}
+
+.modal .btn-left {
+    background: var(--blue);
+}
+
+.modal-loading {
+    background: var(--black-2);
+    display: none;
+}
+
+.modal-loading.active {
+    display: flex;
+}
+
+.modal-loading .image {
+    --size: 70px;
+    height: var(--size);
+    width: var(--size);
+    
+    background: url('/images/loading.gif'), var(--black-2);
+    background-size: contain;
+    background-blend-mode: color;
+    background-position: center;
+    background-repeat: no-repeat;
+}

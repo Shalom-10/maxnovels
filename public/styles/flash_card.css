@@ -1,0 +1,62 @@
+.flash-case {
+    background: #0000006a;
+    opacity: 0;
+    display: none;
+    transition: display 3s 3s, opacity 3s 0s;
+}
+
+.flash-case.active {
+    display: flex;
+    opacity: 1;
+
+}
+
+.flash-card {
+    background: var(--black-2);
+    border-radius: 10px;
+    color: var(--white);
+    width: 500px;
+    height: 250px;
+}
+
+@media only screen and (max-width: 530px) {
+    .flash-card {
+        width: 95vw;
+        min-height: 250px;
+        height: max-content;
+    }
+}
+
+.flash-card .flash-top {
+    border-bottom: 1px solid var(--grey);
+    height: 50px;
+    width: 100%;
+    padding: 0  1rem;
+    font-size: 110%;
+
+}
+
+.flash-card .flash-content {
+    align-items: center;
+    height: calc(100% - 50px);
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flash-card .flash-icon {
+    color: var(--electric);
+    background: var(--black-4);
+    border: 5px solid var(--black-4);
+    border-radius: 50%;
+
+    font-size: 400%;
+
+    --size: 90px;
+    height: var(--size);
+    width: var(--size);
+}
+
+.flash-card p {
+    padding: .5rem;
+    font-size: 90%;
+}

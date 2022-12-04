@@ -1,0 +1,10 @@
+.menu-btn {
+    --size: 50px;
+
+    background: var(--black-3);
+    border-radius: 5px;
+    cursor: pointer;
+    height: var(--size);
+    width: var(--size);
+    font-size: 200%;
+}

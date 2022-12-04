@@ -1,0 +1,30 @@
+.mode-btn {
+    --size: 50px;
+    height: var(--size);
+    width: var(--size);
+
+    border: 2px solid var(--secondary-color);
+    background: var(--black-1);
+    color: var(--yellow);
+
+    font-size: 150%;
+
+    bottom: 5%;
+    right: 3%;
+
+    z-index: 5;
+}
+
+.lightmode .mode-btn {
+    background: var(--white);
+    color: var(--secondary-color)
+}
+
+.lightmode .mode-btn .bi:first-of-type,
+.mode-btn .bi:nth-of-type(2) {
+    display: none;
+}
+
+.lightmode .mode-btn .bi:nth-of-type(2) {
+    display: block;
+}

@@ -1,0 +1,104 @@
+
+.writer-card-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 255px);
+    justify-content: center;
+    padding: 2rem;
+}
+
+.writer-card-box .links {
+    grid-column: 1/-1;
+}
+
+.writer_card {
+    background: var(--black-2);
+    border-radius: 5px;
+    width: 230px;
+    height: 290px;
+    margin: 1rem;
+}
+
+.writer_card .image {
+    border-radius: 5px;
+    height: 83.5%;
+}
+
+.writer_card .details {
+    backdrop-filter: blur(20px);
+    color: var(--white);
+    height: 40px;
+}
+
+.details h4 {
+    background: #0000006d;
+    font-size: 90%;
+    font-weight: 400;
+}
+
+.writer_card > * {
+    transform: scale(.95);
+}
+
+.writer_card .btn-case {
+    border-radius: 5px;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    height: max-content;
+}
+
+.card-btn{
+    background: var(--black-1);
+    height: 100%;
+    width: 80%;
+
+    padding: .65rem 0;
+    font-size: 80%;
+}
+
+.card-btn + .card-btn {
+    background: var(--secondary-color);
+    border-left: 1px solid var(--black-4);
+    width: 20%;
+    
+}
+
+.card-btn:hover {
+    background: var(--black);
+}
+
+.card-btn + .card-btn:hover {
+    background: var(--purple)
+}
+
+.no-result {
+    height: 40vh;
+    color: var(--white);
+    display: none;
+}
+
+.no-result.active {
+    display: flex;
+}
+
+.no-result .icon {
+    font-size: 450%;
+}
+
+.no-result p {
+    padding: .65rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.add-btn {
+    background: var(--color-2);
+    border-radius: 10px;
+    color: var(--white);
+    width: max-content;
+    padding: .5rem 1rem;
+    margin: 3rem 4rem;
+    margin-bottom: 0;
+}
+
+.add-btn:hover {
+    background: var(--purple);
+}

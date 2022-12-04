@@ -1,0 +1,158 @@
+
+.scroll-box {
+    margin: 2rem 0;
+}
+
+.right_c .contents .scroll-box  .h2 {
+    color: var(--white-2);
+    font-size: clamp(2rem, 2.5vw, 5rem);
+}
+
+
+.card {
+
+    height: 270px;
+    width: 200px;
+    font-size: 80%;
+}
+
+.rounded_stat {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); 
+   color: var(--white);
+   margin-top: 1rem;
+}
+
+.rounded_stat > div {
+    background: var(--black-2);
+    border-radius: 5px;
+    height: 150px;
+    transform: scale(.9);
+}
+
+.rounded_stat .desc {
+    padding: .5rem;
+    font-size: 30%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.rounded_stat .card-content {
+    font-size: 300%;
+}
+
+section.activity {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 2rem .75rem;
+}
+
+.active_user {
+    background: var(--black-2);
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
+    transform: scale(.98);
+    /* margin: .25rem; */
+}
+
+.active_top {
+    border-bottom: 3px solid var(--black-1);
+    padding: 0 1rem;
+}
+
+.active_top .btn {
+    padding: .5rem .75rem;
+
+}
+
+.active_item {
+    border-bottom: 1px solid var(--grey);
+    padding: .7rem 1rem;
+    font-family: 'Poppins';
+}
+
+.active_item .icon {
+    --size: 50px;
+    background: var(--black-1);
+    height: var(--size);
+    width: var(--size);
+
+}
+
+.active_item .icon::before {
+    content: '';
+    position: absolute;
+
+    --size: 10px;
+    height: var(--size);
+    width: var(--size);
+
+    border-radius: 50%;
+
+    background: var(--electric);
+    top: 70%;
+    right: 1%;
+}
+
+.active_item .name {
+    padding: 0 .5rem;
+}
+
+/* .active_item {
+    c
+} */
+
+#pie {
+    transform: scale(.8);
+    height: 400px;
+    width: 400px;
+}
+
+
+@media only screen and (max-width: 765px) {
+    .rounded_stat {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    section.activity {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .active_user {
+        background: var(--black-2);
+        border-radius: 5px;
+        width: 93.5vw;
+        height: max-content;
+        margin: .75rem 0;
+    }
+
+    /* #pie {
+        transform: scale(.8);
+        height: 60vw;
+        width: 60vw;
+    } */
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        height: 230px;
+        width: 150px;
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .rounded_stat {
+        font-size: 70%;
+    }
+
+    .active_user {
+        font-size: 80%;
+    }
+}

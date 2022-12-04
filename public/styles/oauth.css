@@ -1,0 +1,30 @@
+body {
+    background: var(--black-4);
+}
+
+h1 {
+    padding: 1.5rem 0;
+}
+
+.input_box {
+    width: 500px;
+}
+
+@media only screen and (max-width: 570px) {
+    .input_box {
+        width: 90vw;
+    }
+}
+
+button {
+    background: var(--secondary-color)
+}
+
+button:hover{
+    background: var(--blue);
+}
+
+.error_message {
+    padding: .5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,14 @@
+.lightmode body {
+    background: var(--white);
+    color: var(--black-1);
+}
+
+.lightmode .banner {
+    margin: 0;
+}
+
+.banner 
+, .lightmode .grid-4 
+{
+    margin-bottom: 0;
+}

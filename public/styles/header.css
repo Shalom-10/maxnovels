@@ -1,0 +1,110 @@
+
+header .overlay.blur {
+    backdrop-filter: blur(5px) ;
+}
+
+header {
+    /* padding: var(--content-padding); */
+    color: var(--white);
+    height: 100vh;
+}
+
+header .overlay.color {
+    background: var(--black-4);
+}
+
+.lightmode header .overlay.color {
+    background: var(--white);
+    /* opacity: 0.9; */
+}
+
+header h1 {
+    font-size: clamp(2.5rem, 4.5vw, 5rem);
+    color: #d2d0d0;
+    line-height: 1.2;
+    
+}
+
+header .light, .lightmode header .dark {
+    display: none;
+}
+
+.lightmode header .light {
+    display: block;
+}
+
+.lightmode header h1 {
+    color: var(--black-1);
+}
+
+header h1 span {
+    color: var(--primary-color-variant);
+}
+
+header h1 span + span {
+    color: var(--secondary-color);
+}
+
+header p {
+    font-family: "Poppins", sans-serif;
+    width: 70%;
+}
+
+.lightmode header p {
+    color: var(--black-1);
+}
+
+
+header .btn {
+    background: var(--secondary-color);
+    width: max-content;
+    padding: .75rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 100%;
+}
+
+header .left {
+    padding: 0 2rem;
+    padding-top: 4rem;
+}
+
+
+@media  (max-width: 900px) {
+    header p {
+        width: 90%;
+        font-size: 90%;
+    }
+}
+
+@media  (max-width: 760px) {
+
+    header {
+        height: max-content;
+    }
+
+    header .contents {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    header .contents > div {
+        width: 100%;
+    }
+
+    header .left {
+        padding: 3rem 2rem;
+        padding-top: 6rem;
+        height: 80vh;
+    }
+}
+
+@media  (max-width: 375px) {
+    header p {
+        width: 100%;
+        font-size: 90%;
+    }
+
+    header .left {
+        padding-top: 10rem;
+    }
+}

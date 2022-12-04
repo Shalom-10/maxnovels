@@ -1,0 +1,32 @@
+.scroll {
+    /* border: 10px solid red; */
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* transform: scale(.9); */
+}
+
+.scroll .contents {
+    /* background: yellow; */
+    width: max-content;
+    padding: var(--content-padding);
+}
+
+.scroll-box .scroll-btn {
+    --size: 50px;
+    height: var(--size);
+    width: var(--size);
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: var(--black-2);
+    box-shadow: 0 0 var(--radius) var(--black-3);
+    color: var(--white);
+}
+
+.scroll-box .scroll-btn.left {
+    left: 10px;
+}
+
+.scroll-box .scroll-btn.right {
+    right: 10px;
+}
